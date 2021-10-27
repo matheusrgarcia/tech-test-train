@@ -1,0 +1,14 @@
+<!-- Terminal -->
+<div class="terminal">
+  <div *ngIf="originalGraph">
+    <span>Para o Grafo: {{ originalGraph }}</span>
+    <span>Relatório</span>
+    <div *ngFor="let result of relatory">
+      <span>{{result}}</span>
+    </div>
+  </div>
+  <div *ngIf="!originalGraph">
+    <span>Faça o upload de um arquivo contendo um Grafo neste formato:</span>
+    <span>'AB2', 'BC3', 'CD5'</span>
+  </div>
+</div>

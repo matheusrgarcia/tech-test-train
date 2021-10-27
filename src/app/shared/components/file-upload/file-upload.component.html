@@ -1,0 +1,9 @@
+<div class="file-upload"
+     (click)="graphFile.click()">
+  <input
+    type="file"
+    #graphFile
+    accept=".txt"
+    (change)="loadFile($event)"/>
+  <span>Importar Grafo</span>
+</div>
